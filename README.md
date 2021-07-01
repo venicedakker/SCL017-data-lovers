@@ -33,6 +33,8 @@ Durante el primer Sprint generamos 4 historias de usuario con sus prototipos de 
 ## Sprint 4
 * Terminamos el responsive de la página, asegurando que la tarjeta emergente fuera responsive también. 
 * Además vimos que todos los filtros necesarios estuvieran hechos, además de hacer algunos test y paso del linter.
+## Sprint 5
+* Terminamos los test y pedimos peer y project Feedback.
 
 ## Test de usabilidad #1
 ### Cosas que decidimos no cambiar 
