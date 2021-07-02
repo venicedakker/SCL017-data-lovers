@@ -1,4 +1,4 @@
-# Proyecto #2: DataLovers (Javiera Herrera & Valeria Argomedo)
+﻿# Proyecto #2: DataLovers (Javiera Herrera & Valeria Argomedo)
 
 * Link a la Página (gh-pages): https://venicedakker.github.io/SCL017-data-lovers/ 
 * Link Figma: [Prototipo de Alta Fidelidad ](https://www.figma.com/file/fxpUJgdxYroRBwpN3yXuvC/DataLovers-Herrera-and-Argomedo)
@@ -34,10 +34,12 @@ Durante el primer Sprint generamos 4 historias de usuario con sus prototipos de 
 * Terminamos el responsive de la página, asegurando que la tarjeta emergente fuera responsive también. 
 * Además vimos que todos los filtros necesarios estuvieran hechos, además de hacer algunos test y paso del linter.
 ## Sprint 5
-* Terminamos los test y pedimos peer y project Feedback.
+* Hicimos el Test de usabilidad y vimos que cosas se podian cambiar en relación a este. 
+* Terminamos los test.
+* Hicimos autoevaluación, pedimos Peer Feedback y Project FeedBack.
 
 ## Test de usabilidad #1
-### Cosas que decidimos no cambiar 
+### Cosas se decidieron no cambiar 
 * El título confunde, quizás poner "virtual pokedex" envés.
 * En las pantallas más pequeñas se ve mal que este todo con margin left 0. 
 
@@ -63,7 +65,7 @@ Durante el primer Sprint generamos 4 historias de usuario con sus prototipos de 
 ![Prototipo_popUp1](/img_prototipo/Prototipo_Baja_popUp_iteracion.png)
 ![Prototipo_bienvenida](/img_prototipo/Prototipo_Baja_Pagina_Bienvenida.png)
 ![Prototipo_alta](/img_prototipo/Prototipo_Alta_Pagina_Principal.png)
-
+![Prototipo_alta_Popup](/img_prototipo/Prototipo_alta_popUp.png)
 
 
 
