@@ -164,40 +164,21 @@ for (let c = 0; c < 2; c++) {
 
         }
 
-        if (!filterGeneration[c].checked) {
-
-            newOrder = data.pokemon;
-            index = listGeneration.indexOf(filterGeneration[c].value);
-
-            if (index > -1) {
-                listGeneration.splice(index, 1);
-            }
-
+        if (filterGeneration[0].checked == false && filterGeneration[1].checked == false) {
             oldcards = document.getElementsByClassName("pokemon-card");
 
-            while (oldcards[0]) {
-                oldcards[0].parentNode.removeChild(oldcards[0]);
-            }
-
-            newOrder = pokemons.filterData(newOrder, listGeneration);
-
+                while (oldcards[0]) {
+                    oldcards[0].parentNode.removeChild(oldcards[0]);
+                }
+            newOrder = data.pokemon;
             for (let i = 0; i < newOrder.length; i++) {
-                initiator.loadData(newOrder[i]); // iniciamos el js de GeneratorPokemon el cual hace las tarjetas
+                initiator.loadData(newOrder[i]); 
             }
 
             loadModals(newOrder);
 
-            if (filterGeneration[0].checked == false && filterGeneration[1].checked == false) {
-
-                newOrder = data.pokemon;
-                for (let i = 0; i < newOrder.length; i++) {
-                    initiator.loadData(newOrder[i]); 
-                }
-
-                loadModals(newOrder);
-
-            }
         }
+       
     })
 }
 //-----------------------------------------------------------------------------
@@ -390,8 +371,8 @@ const input1 = document.getElementById("find-pokemon");
 const contenedor = document.getElementById("container");
 
 let pokeArrayName = [];
-for (let x = 0; x < data.pokemon.length; x++) {
-    pokeArrayName[x] = (data.pokemon[x].name);
+for (let x = 0; x < newOrder.length; x++) {
+    pokeArrayName[x] = (newOrder[x].name);
 }
 
 input1.addEventListener("keyup", (event) => {
@@ -403,7 +384,7 @@ input1.addEventListener("keyup", (event) => {
 
     let posicionPoke = [];
 
-    for (let j = 0; j < data.pokemon.length; j++) {
+    for (let j = 0; j < newOrder.length; j++) {
 
         let idEachPoke = (pokeArrayName[j]);
 
@@ -419,8 +400,8 @@ input1.addEventListener("keyup", (event) => {
 
     for (let jjj = 0; jjj < posicionPoke.length; jjj++) {
         initiator.loadData(newOrder[posicionPoke[jjj]]);
-        loadModals(newOrder[posicionPoke[jjj]]);
-    }    
+    }
+    loadModals(newOrder);    
 });
 
 
